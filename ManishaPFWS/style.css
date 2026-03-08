@@ -1,0 +1,173 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f4f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background: #22223b;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #c9ada7;
+}
+
+/* Navigation styles */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #4a4e69;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #9a8c98;
+}
+
+/* Section styles */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(34, 34, 59, 0.07);
+}
+
+section h2 {
+    color: #22223b;
+    margin-bottom: 18px;
+    font-size: 2rem;
+    border-left: 4px solid #4a4e69;
+    padding-left: 12px;
+}
+
+section ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+section li {
+    margin-bottom: 8px;
+}
+
+/* Project cards */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #f2e9e4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(74, 78, 105, 0.08);
+    padding: 20px;
+    width: 270px;
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(74, 78, 105, 0.15);
+}
+
+.project-card h3 {
+    color: #4a4e69;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #22223b;
+    font-size: 1rem;
+}
+
+/* Contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #c9ada7;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background: #4a4e69;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact-form button:hover {
+    background: #22223b;
+}
+
+.studymaterials {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.phone-hidden {
+  cursor: pointer; /* Indicates the number is clickable */
+  border-bottom: 1px dotted #999; /* Optional: adds a dotted underline */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    background: #22223b;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    section {
+        padding: 18px 8px;
+    }
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hello, my name is Manisha Prajapati.</h1>
+    
+      <i> <h2>I'm a passionate web developer.</h2> </i>
+
+      <img id="portfolioImage" 
+     src="MS.jpg" 
+     alt="Portfolio Photo" 
+     style="cursor: pointer; width: 200px;" 
+     onclick="switchToLogo()">
+
+<script>
+function switchToLogo() {
+  // Finds the image element by its ID
+  var img = document.getElementById("portfolioImage");
+  
+  // Changes the source to your website's logo
+  img.src = "img.jpg";
+  
+  // Optional: Change the alt text for better accessibility
+  img.alt = "Website Logo";
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const phoneNumberSpan = document.getElementById('phoneNumber');
+  let isNumberHidden = true; // Track the visibility state
+
+  phoneNumberSpan.addEventListener('click', function() {
+    if (isNumberHidden) {
+      const fullNumber = this.getAttribute('data-full-number');
+      this.textContent = fullNumber; // Show the full number
+      this.classList.remove('phone-hidden'); // Change cursor/styling
+      isNumberHidden = false; // Update the state
+      
+      // Optional: make the number a clickable tel link after revealing
+      // You can wrap the number in an <a> tag here if needed.
+    }
+  });
+});
+</script>
+
+
+    </header>
+
+    <section id="Educational Details">
+            <a href="#about">About</a> | <a href="#projects">Projects</a> | <a href="#contact">Contact</a> | <a href="#Studymaterial">Study Material</a>
+    
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with the knowledge of HTML, CSS, JavaScript and Java. I have a knowledge of SQL Server ,Canva .  I'm creating my future in web development and software engineering.
+            I'm always eager to learn new technologies and improve my skills. I enjoy working on projects that challenge me and allow me to grow as a developer.</p>
+    </section>
+    <section id="Educational Details">
+        <h2>Educational Details</h2>
+        <h4> Qualification </h4>
+        <table>
+            <ol>
+    
+                <li>1. BTech | Computer Science and Engineering</li>
+                <li>2. Diploma | Computer Science and Engineering</li>
+                <li>3. High School | Science</li>               
+            </ol>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project One</h3>
+            <p>That's my first portfolio website project. In this project, I have created a responsive and visually appealing portfolio website using HTML, CSS, and JavaScript.</p>
+        </div>
+    </section>
+
+
+    <footer id="contact">
+        <h2>Contact Me </h2>
+        <p>Email: prajapatimanisha072@.com<br>
+  Phone:
+  <span id="phoneNumber" data-full-number="+9336844329" class="phone-hidden">
+    +93368XXXXX
+  </span>
+</p>
+    </footer>
+</body>
+</html>
